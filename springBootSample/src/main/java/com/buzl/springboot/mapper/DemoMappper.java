@@ -8,7 +8,7 @@ import com.buzl.springboot.bean.db.Demo;
 
 public interface DemoMappper {
 	
-	@Select("select * from demo where name like '%'||#{name}||'%' ")
+	@Select("select * from demo where name like CONCAT(#{name},'%' )")
 	public List<Demo> likeName(String name);
 
 	@Select("select * from demo where id = #{id}")
