@@ -1,4 +1,4 @@
-package com.buzl.springboot.demo.bean;
+package com.buzl.springboot.bean.db;
 
 public class Demo {
 	

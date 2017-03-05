@@ -1,12 +1,12 @@
-package com.buzl.springboot.demo.service;
+package com.buzl.springboot.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.buzl.springboot.demo.bean.Demo;
-import com.buzl.springboot.demo.mapper.DemoMappper;
+import com.buzl.springboot.bean.db.Demo;
+import com.buzl.springboot.mapper.DemoMappper;
 
 @Service
 public class DemoService {

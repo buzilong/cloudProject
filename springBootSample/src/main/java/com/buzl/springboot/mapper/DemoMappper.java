@@ -1,10 +1,10 @@
-package com.buzl.springboot.demo.mapper;
+package com.buzl.springboot.mapper;
 
 import java.util.List;
 
 import org.apache.ibatis.annotations.Select;
 
-import com.buzl.springboot.demo.bean.Demo;
+import com.buzl.springboot.bean.db.Demo;
 
 public interface DemoMappper {
 	

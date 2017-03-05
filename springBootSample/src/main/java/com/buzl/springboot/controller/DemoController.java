@@ -1,4 +1,4 @@
-package com.buzl.springboot.demo.controller;
+package com.buzl.springboot.controller;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.buzl.springboot.demo.bean.Demo;
-import com.buzl.springboot.demo.service.DemoService;
+import com.buzl.springboot.bean.db.Demo;
+import com.buzl.springboot.service.DemoService;
 
 @RestController
 public class DemoController {

@@ -9,7 +9,7 @@ import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
 @PropertySource(value = { "config/application.properties" })
-@MapperScan("com.buzl.springboot.*.mapper")
+@MapperScan("com.buzl.springboot.mapper*")
 public class Application extends SpringBootServletInitializer{
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
