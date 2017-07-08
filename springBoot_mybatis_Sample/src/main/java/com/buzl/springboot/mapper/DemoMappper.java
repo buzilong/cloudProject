@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.apache.ibatis.annotations.Select;
 
-import com.buzl.springboot.bean.db.Demo;
+import com.buzl.springboot.db.model.Demo;
 
 public interface DemoMappper {
 	

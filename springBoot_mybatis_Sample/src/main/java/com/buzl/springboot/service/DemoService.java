@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.buzl.springboot.bean.db.Demo;
+import com.buzl.springboot.db.model.Demo;
 import com.buzl.springboot.mapper.DemoMappper;
 
 @Service
