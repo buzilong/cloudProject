@@ -2,7 +2,8 @@ package com.buzl.springboot.controller;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +15,7 @@ import com.buzl.springboot.service.DemoService;
 
 @RestController
 public class DemoController {
-	private static final Logger LOGGER = Logger.getLogger(DemoController.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(DemoController.class);
 	@Autowired
 	private DemoService demoService;
 	

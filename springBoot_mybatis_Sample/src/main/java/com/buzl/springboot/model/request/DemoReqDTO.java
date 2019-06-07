@@ -1,6 +1,6 @@
 package com.buzl.springboot.model.request;
 
-import org.hibernate.validator.constraints.NotBlank;
+import javax.validation.constraints.NotBlank;
 
 public class DemoReqDTO {
 
