@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 @RestController
+
 public class TestController {
 
 	private RestTemplate restTemplate = new RestTemplate();
