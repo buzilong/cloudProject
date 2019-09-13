@@ -5,3 +5,5 @@
 *.prefs
 /springBootSample/target/*
 springBootSample/logs/*
+.idea/
+springBoot_integration/mybatis_sample.iml
