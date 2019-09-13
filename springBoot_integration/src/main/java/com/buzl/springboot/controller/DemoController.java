@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.buzl.springboot.db.model.Demo;
 import com.buzl.springboot.model.request.DemoReqDTO;
 import com.buzl.springboot.service.DemoService;
+import com.buzl.springboot.utils.IOCBeanTestUtil;
 
 @RestController
 public class DemoController {
@@ -29,5 +30,16 @@ public class DemoController {
 
 		return result;
 
+	}
+	
+	@RequestMapping("/IOCTest/likeName")
+	public List<Demo> likeNameIOC(@Validated DemoReqDTO requestDTO) {
+		
+		long startTime = System.currentTimeMillis();
+		List<Demo>  result = IOCBeanTestUtil.likeName(requestDTO.getName());
+		
+		LOGGER.info("Controller cost time:" + (System.currentTimeMillis() - startTime));
+
+		return result;
 	}
 }
