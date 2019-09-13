@@ -2,6 +2,9 @@ package com.buzl.springboot.model.request;
 
 import javax.validation.constraints.NotBlank;
 
+/**
+ * @author buzl
+ */
 public class DemoReqDTO {
 
 	@NotBlank(message="Name is empty")

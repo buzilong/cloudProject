@@ -14,6 +14,9 @@ import com.buzl.springboot.model.request.DemoReqDTO;
 import com.buzl.springboot.service.DemoService;
 import com.buzl.springboot.utils.IOCBeanTestUtil;
 
+/**
+ * @author buzl
+ */
 @RestController
 public class DemoController {
 	private static final Logger LOGGER = LoggerFactory.getLogger(DemoController.class);
@@ -31,9 +34,9 @@ public class DemoController {
 		return result;
 
 	}
-	
+
 	@RequestMapping("/IOCTest/likeName")
-	public List<Demo> likeNameIOC(@Validated DemoReqDTO requestDTO) {
+	public List<Demo> likeNameIOC(DemoReqDTO requestDTO) {
 		
 		long startTime = System.currentTimeMillis();
 		List<Demo>  result = IOCBeanTestUtil.likeName(requestDTO.getName());

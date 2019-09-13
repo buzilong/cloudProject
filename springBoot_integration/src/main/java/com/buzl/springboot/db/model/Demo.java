@@ -1,5 +1,8 @@
 package com.buzl.springboot.db.model;
 
+/**
+ * @author buzl
+ */
 public class Demo {
 	
 	private long id;

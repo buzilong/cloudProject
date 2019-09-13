@@ -2,10 +2,14 @@ package com.buzl.springboot.mapper;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
 import com.buzl.springboot.db.model.Demo;
-
+/**
+ * @author buzl
+ */
+@Mapper
 public interface DemoMappper {
 	
 	@Select("select * from demo where name like CONCAT('%',#{name},'%')")
